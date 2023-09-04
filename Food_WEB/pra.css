@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form{
+
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+form input{
+
+    height: 30px;
+    margin-bottom: 10px;
+
+}
+
+form input[type="submit"] {
+
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background: blue;
+    color: white;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+
+}
+
+/* now we are making style if validation done and not done "/ */
+
+/* if validation done then we will use this class */
+.stop {
+    transition: 1s;
+
+}
+
+/* if validation not done then we will use this class */
+.move {
+    transform: translateX(100%);
+    
+}
